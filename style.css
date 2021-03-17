@@ -1,0 +1,690 @@
+@charset "UTF-8";
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+body {
+  background-color: #faed77;
+}
+
+.reverse-name {
+  font-family: "Lobster", cursive;
+  font-size: 40px;
+  text-align: center;
+  line-height: 1px;
+  -webkit-animation: flip;
+          animation: flip;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.reverse-button {
+  font-family: "Varela Round", sans-serif;
+  color: white;
+  border: none;
+  padding: 7px;
+  background: black;
+  outline: none;
+  display: table;
+  margin: auto;
+  margin-top: 40px;
+  letter-spacing: 1px;
+}
+
+.reverse-button:hover {
+  color: gray;
+}
+
+.textInput {
+  border-radius: 20px;
+  border: none;
+  height: 30px;
+  width: 200px;
+}
+
+/* To Do List */
+#todo-box {
+  font-family: "Varela Round", sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.input-box {
+  font-family: "Varela Round", sans-serif;
+  font-size: 15px;
+  outline: none;
+  margin-top: 70px;
+  margin-left: 10px;
+  border: none;
+  line-height: 30px;
+  width: 260px;
+  height: 28px;
+  padding: 8px;
+}
+
+.add-button {
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.close-button {
+  border: none;
+  margin-left: 18px;
+  margin-top: 10px;
+  outline: none;
+  vertical-align: bottom;
+}
+
+.futureTask {
+  display: table;
+  margin: auto;
+}
+
+.taskList {
+  font-family: "Varela Round", sans-serif;
+  letter-spacing: 1px;
+  margin-left: 10px;
+}
+
+/* ul > li > .complete {
+  text-decoration: line-through;
+} */
+ul li:nth-child(n + 9) {
+  display: none;
+}
+
+/* Count Up */
+.click-display {
+  position: absolute;
+  bottom: 60px;
+  right: 120px;
+  font-family: "Varela Round", sans-serif;
+  letter-spacing: 1px;
+}
+
+.number-display {
+  font-size: 50px;
+}
+
+.count-button {
+  position: absolute;
+  bottom: 70px;
+  right: 70px;
+  font-family: "Varela Round", sans-serif;
+  background: black;
+  color: white;
+  outline: none;
+  padding: 1px 9px 1px 9px;
+  border: none;
+  letter-spacing: 1px;
+  font-size: 28px;
+}
+
+/* Pictures */
+.icon-pencil {
+  position: absolute;
+  top: 350px;
+  left: 100px;
+}
+
+.icon-eraser {
+  position: absolute;
+  top: 290px;
+  left: 90px;
+}
+
+.icon-ruler {
+  position: absolute;
+  top: 60px;
+  left: 30px;
+}
+
+.icon-scissors {
+  position: absolute;
+  top: 150px;
+  left: 190px;
+}
+
+.icon-triangle {
+  position: absolute;
+  top: 60px;
+  left: 260px;
+}
+
+.icon-clip {
+  position: absolute;
+  top: 350px;
+  left: 300px;
+}
+
+.icon-clip2 {
+  position: absolute;
+  top: 420px;
+  left: 260px;
+}
+
+/* Calc */
+.inputBox {
+  position: absolute;
+  bottom: 480px;
+  right: 110px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  outline: none;
+  border-radius: 100px;
+  border: none;
+  width: 200px;
+  height: 30px;
+  text-align: right;
+  padding: 10px;
+}
+
+.dot {
+  position: absolute;
+  bottom: 180px;
+  right: 223px;
+  font-size: 30px;
+  font-family: "Press Start 2P", cursive;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.equal {
+  position: absolute;
+  bottom: 180px;
+  right: 163px;
+  font-size: 30px;
+  font-family: "Press Start 2P", cursive;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.clear {
+  position: absolute;
+  bottom: 180px;
+  right: 98px;
+  font-size: 32px;
+  background: none;
+  border: none;
+  font-family: "Press Start 2P", cursive;
+  outline: none;
+}
+
+.plus {
+  position: absolute;
+  bottom: 410px;
+  right: 280px;
+  font-size: 40px;
+  background: none;
+  border: none;
+  font-family: "Press Start 2P", cursive;
+  outline: none;
+}
+
+.minus {
+  position: absolute;
+  bottom: 410px;
+  right: 223px;
+  font-size: 40px;
+  background: none;
+  border: none;
+  font-family: "Press Start 2P", cursive;
+  outline: none;
+}
+
+.multiple {
+  position: absolute;
+  bottom: 413px;
+  right: 158px;
+  font-size: 38px;
+  background: none;
+  border: none;
+  font-family: "Press Start 2P", cursive;
+  outline: none;
+}
+
+.divide {
+  position: absolute;
+  bottom: 408px;
+  right: 98px;
+  font-size: 40px;
+  background: none;
+  border: none;
+  font-family: "Press Start 2P", cursive;
+  outline: none;
+}
+
+.num1 {
+  position: absolute;
+  bottom: 240px;
+  right: 285px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  font-family: "Press Start 2P", cursive;
+  outline: none;
+}
+
+.num2 {
+  position: absolute;
+  bottom: 240px;
+  right: 223px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  font-family: "Press Start 2P", cursive;
+  outline: none;
+}
+
+.num3 {
+  position: absolute;
+  bottom: 240px;
+  right: 163px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  font-family: "Press Start 2P", cursive;
+  outline: none;
+}
+
+.num4 {
+  position: absolute;
+  bottom: 300px;
+  right: 285px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  font-family: "Press Start 2P", cursive;
+  outline: none;
+}
+
+.num5 {
+  position: absolute;
+  bottom: 300px;
+  right: 224px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  font-family: "Press Start 2P", cursive;
+  outline: none;
+}
+
+.num6 {
+  position: absolute;
+  bottom: 300px;
+  right: 162px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  font-family: "Press Start 2P", cursive;
+  outline: none;
+}
+
+.num7 {
+  position: absolute;
+  bottom: 360px;
+  right: 284px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  font-family: "Press Start 2P", cursive;
+  outline: none;
+}
+
+.num8 {
+  position: absolute;
+  bottom: 360px;
+  right: 223px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  font-family: "Press Start 2P", cursive;
+  outline: none;
+}
+
+.num9 {
+  position: absolute;
+  bottom: 360px;
+  right: 164px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  font-family: "Press Start 2P", cursive;
+  outline: none;
+}
+
+.num0 {
+  position: absolute;
+  bottom: 180px;
+  right: 285px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  font-family: "Press Start 2P", cursive;
+  outline: none;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 0;
+  left: 610px;
+  line-height: none;
+  -webkit-animation: bounce infinite;
+          animation: bounce infinite;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.iconTop {
+  display: table;
+  margin: auto;
+}
+
+.top {
+  font-family: "Varela Round", sans-serif;
+  letter-spacing: 1px;
+  font-size: 12px;
+  text-decoration: none;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#app {
+  height: 600px;
+}
+
+.science-bg {
+  display: table;
+  margin: auto;
+  margin-top: 100px;
+}
+
+/* ローディング画面 */
+.is-hide {
+  display: none;
+}
+
+.fadeout-bg {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-delay: 0.9s;
+          transition-delay: 0.9s;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.fadeout-loader {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-delay: 0.9s;
+          transition-delay: 0.9s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#loader-bg {
+  background: #faed77;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+#loader {
+  height: 120px;
+  left: 50%;
+  margin-left: -60px;
+  margin-top: -60px;
+  position: fixed;
+  top: 50%;
+  width: 120px;
+}
+
+#loader p {
+  color: black;
+  font-size: 15px;
+  line-height: 1.4;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.big-loader {
+  -webkit-animation: jello;
+          animation: jello;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.loading {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+}
+
+/* チェックボックス（非表示） */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* 自己紹介ページ */
+.name {
+  font-family: "Lobster", cursive;
+  font-size: 60px;
+  margin-left: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.about-me {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 50px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.carrer {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.skills {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.offer {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  border: 1px solid;
+  border-color: gray;
+}
+
+.under-hr {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.under-hr-skill {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.intro-details {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  margin-left: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* スキルアイコン */
+table {
+  margin-bottom: 50px;
+  display: table;
+  margin: 0 auto;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.icon-html,
+.icon-css,
+.icon-sass,
+.icon-bs,
+.icon-js,
+.icon-vue,
+.icon-nodejs,
+.icon-github,
+.icon-vs,
+.icon-gimp {
+  display: table;
+  margin: 0 auto;
+  margin: 20px;
+}
+
+/* レスポンシブスタイリング */
+.todo-sp {
+  font-family: "Varela Round", sans-serif;
+  letter-spacing: 1px;
+  display: table;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.input-box-sp {
+  font-family: "Varela Round", sans-serif;
+  font-size: 15px;
+  outline: none;
+  margin-top: 10px;
+  margin-left: 50px;
+  border: none;
+  line-height: 30px;
+  width: 240px;
+  height: 28px;
+  padding: 8px;
+}
+
+.add-button-sp {
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.close-button-sp {
+  border: none;
+  margin-left: 18px;
+  margin-top: 10px;
+  outline: none;
+  vertical-align: bottom;
+}
+
+.futureTask-sp {
+  display: table;
+  margin: auto;
+}
+
+.taskList-sp {
+  font-family: "Varela Round", sans-serif;
+  letter-spacing: 1px;
+  margin-left: 10px;
+}
+
+/* レスポンシブの定義 */
+@media (max-width: 1300px) and (min-width: 1001px) {
+  #todo-box-sp,
+  #cal-box-sp {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 599px) {
+  #todo-box-sp,
+  #cal-box-sp {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 599px) {
+  #picture-pc {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  #picture-pc {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 599px) {
+  #todo-box {
+    position: absolute;
+    top: 130px;
+    left: 90px;
+  }
+}
+
+@media (max-width: 600px) {
+  #todo-box {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  #countup-box {
+    display: table;
+    margin: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  #cal-box {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 599px) {
+  .scroll-down {
+    position: absolute;
+    bottom: 0;
+    left: 480px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
